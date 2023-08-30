@@ -21,6 +21,7 @@ public class Dialog {
         }
         else {
             System.out.println("Which program are you in?");
+            input.nextLine();
             studentProgram = input.nextLine();
         }
 
@@ -32,6 +33,7 @@ public class Dialog {
         String phone = input.nextLine();
         System.out.println("Do you have any pets (true/false)?");
         boolean haspets = input.nextBoolean();
+        input.nextLine();
         System.out.println("Why AUK?");
         String whyAUK = input.nextLine();
 
@@ -60,7 +62,7 @@ public class Dialog {
             System.out.println("Your phone is incorrect");
         }
 
-        if (phone.contains("@")) {
+        if (email.contains("@")) {
             System.out.println("You e-mail is " + email);
         }
         else {
